@@ -45,6 +45,7 @@ module CamCell
     wire f;
     wire xcf;   // Takes on cf when nstore is high
     wire g;
+    wire wr;
     genvar bits;
 
     assign free = xcf;
