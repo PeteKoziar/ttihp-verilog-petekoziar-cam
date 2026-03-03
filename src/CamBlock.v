@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: Pete Koziar
 //
@@ -84,7 +84,7 @@ module CamBlock
         begin
             if(row_found[row_bit_check] != 0)
             begin
-                location[$clog2(ROWS*COLUMNS)-1:$clog2(ROWS)] <= row_bit_check;
+                location[$clog2(ROWS*COLUMNS)-1:$clog2(ROWS)] = row_bit_check;
             end
         end
     end
@@ -96,7 +96,7 @@ module CamBlock
         begin
             if(column_found[ROWS-1][column_bit_check] != 0)
             begin
-                location[$clog2(ROWS)-1:0] <= column_bit_check;
+                location[$clog2(ROWS)-1:0] = column_bit_check;
             end
         end
     end

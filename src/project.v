@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 /*
  * Copyright (c) 2026 Pete Koziar
@@ -26,7 +26,7 @@ CamBlock
     .nReset(rst_n),
     .lookup_strobe(clk),    // Kicks it off.
     .pattern(ui_in),
-    .notPattern(!ui_in),
+    .notPattern(~ui_in),
     .store(uio_in[0]),
     .nStore(!uio_in[0]),
     .location(uo_out[5:0]),
