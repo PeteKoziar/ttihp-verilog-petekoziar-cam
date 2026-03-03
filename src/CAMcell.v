@@ -64,7 +64,7 @@ module CamCell
 
     assign wr = store & xcf & !cf;
 
-    assign match        = (matchbits == {WIDTH{1'b1}});
+    assign match        = (matchBits == {WIDTH{1'b1}});
     assign row_found    = last_row_found    | match;
     assign column_found = last_column_found | match;
 

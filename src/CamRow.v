@@ -64,7 +64,7 @@ module CamRow
             (
             .pattern(pattern),
             .notPattern(notPattern),
-            .reset(reset),
+            .reset(not nReset),
             .last_row_found(cell_found[rows-1]),
             .last_column_found(last_column_found[rows]),
             .last_free(cell_free[rows-1]),

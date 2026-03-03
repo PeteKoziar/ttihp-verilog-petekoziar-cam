@@ -1,5 +1,7 @@
+`timescale 1ns / 1ps
+
 /*
- * Copyright (c) 2024 Your Name
+ * Copyright (c) 2026 Pete Koziar
  * SPDX-License-Identifier: Apache-2.0
  */
 
